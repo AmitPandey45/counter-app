@@ -5,23 +5,8 @@ class Counter extends Component {
     count: 0,
   };
 
-  //   constructor() {
-  //     super();
-  //     this.handleIcrement = this.handleIcrement.bind(this);
-  //   }
-
-  handleIcrement = (product) => {
-    console.log(product);
+  handleIcrement = () => {
     this.setState({ count: this.state.count + 1 });
-  };
-
-  // first way to pass argument to method call (and second way descrbe with button control)
-  doHandleIncrement = () => {
-    this.handleIcrement({ id: 1 });
-  };
-
-  handleCounterLogWithArgument = (counter) => {
-    console.log(counter);
   };
 
   render() {
@@ -33,12 +18,6 @@ class Counter extends Component {
           className="btn btn-secondary btn-sm"
         >
           Increment
-        </button>
-        <button
-          onClick={() => this.handleCounterLogWithArgument(this.state.count)}
-          className="btn btn-primary"
-        >
-          Log Counter Value
         </button>
       </div>
     );
