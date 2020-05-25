@@ -4,12 +4,21 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
-import Counter from "./components/counter";
+import Counters from "./components/counters";
+//import Parent from "./components/parent";
+
+// <React.StrictMode> render component multiple times
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Parent />
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Counter />
-  </React.StrictMode>,
+  <div>
+    <Counters />
+  </div>,
   document.getElementById("root")
 );
 
