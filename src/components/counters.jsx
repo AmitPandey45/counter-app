@@ -15,6 +15,10 @@ class Counters extends Component {
     console.log("Counters- component did update");
   }
 
+  componentWillUnmount() {
+    console.log("Counters- Unmount");
+  }
+
   render() {
     console.log("Counters- rendered");
     const { counters, onIncrement, onDelete, onReset } = this.props;
