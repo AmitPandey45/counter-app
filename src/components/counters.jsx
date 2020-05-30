@@ -11,6 +11,10 @@ class Counters extends Component {
     console.log("Counters- component did mount");
   }
 
+  componentDidUpdate() {
+    console.log("Counters- component did update");
+  }
+
   render() {
     console.log("Counters- rendered");
     const { counters, onIncrement, onDelete, onReset } = this.props;

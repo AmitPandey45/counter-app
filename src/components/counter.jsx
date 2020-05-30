@@ -10,6 +10,12 @@ class Counter extends Component {
     console.log("Counter- component did mount");
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log("Counter- component did update");
+    console.log("prevProps", prevProps);
+    console.log("prevState", prevState);
+  }
+
   render() {
     console.log("Counter- rendered");
     return (
