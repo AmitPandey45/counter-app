@@ -6,3 +6,13 @@ git status
 git commit -m "First commit"
  git remote add origin https://github.com/AmitPandey45/counter-app.git
  git push -u origin master
+
+
+ To Commit a changes using command line for following commit changes-
+  * Added new file
+    git add fileName
+  * Changes existing file
+    git add changeFileName
+
+  then commit changes with comment
+    git commit -m "comment"  
